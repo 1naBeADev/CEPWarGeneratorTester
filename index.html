@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Notes Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div id="mainContainer">
+
+        <div id="headerDiv">
+            <div>
+                <h1>CEP WAR NOTES GENERATOR</h1>
+            </div>
+        </div>
+
+
+        <div class="mainFormDivCtr">
+
+            <div id="formDiv">
+                
+                    <form action="#">
+                        
+                        <div id="subhead">
+                            <div>
+                                <div class="subHeadClass1">
+                                    <label for="vendor">Contact Channel - Vendor: </label>
+                                </div>
+                                
+                                <div class="subHeadClass2">
+                                    <select name="vendor" id="contactChannel">
+                                        <option value="Hotline CND">Hotline - CND</option>
+                                        <option value="Sana All CND">Sana All - CND</option>
+                                        <option value="BOH AM">BOH - Account Management</option>
+                                        <option value="Email CND">Email - CND</option>
+                                        <option value="Socmed CND">Social Media - CND</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>   
+                        
+                        <div id="hotlineForm">
+
+                            <div class="mainform mainform1">
+                                
+                                <div class="formBody1">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="ani">ANI:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="ani" name="ani">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="sfdcCaseNum">SFDC Case Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="sfdcCaseNum" name="sfdcCaseNum">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="contactNumber">Contact Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="contactNumber" name="contactNumber">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="contactEmail" class="extendedLabel" class="extendedLabel">Contact Email</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="email" id="contactEmail" name="contactEmail">
+                                        </div>    
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="concernSearch" class="formLabel">Concern:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <div class="inputContainer">
+                                                <input type="text" id="concernSearch" class="formInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                                                <div id="concernDropdown" class="dropdown-content hideCH">
+                                                    <ul id="concernList" class="dropdownList"></ul>
+                                                </div>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="formBody2">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="baNum">Billing Account Number</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="baNum" name="baNum">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="contactPerson">Contact Person:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="contactPerson" name="contactPerson">
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="wPermit">Working Permit Needed:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <select name="wPermit" id="wPermit">
+                                                <option value="blank"></option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="Not Needed">Not Needed</option>
+                                                <option value="Not Need  - Please Bring ID">Not Need - Please Bring ID</option>
+                                                <option value="For Verification">For Verification</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="avalableDateandTime">Available Date and Time:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="avalableDateandTime" name="avalableDateandTime">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="serviceID">Service ID:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="serviceID" name="serviceID">
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+
+                            </div>
+
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="wocas">WOCAS:</label>
+                                </div>  
+                                <div class="ttdFlex2">
+                                    <textarea name="wocas" id="wocas"></textarea>
+                                </div>
+                            </div>   
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="cvTestResult">Clearview Test Result:</label>
+                                </div>  
+                                <div class="ttdFlex2">
+                                    <textarea name="cvTestResult" id="cvTestResult"></textarea>
+                                </div>
+                            </div>    
+
+                            <div class="mainform">
+            
+                                <div class="formBody1">
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="requiredAction">Required Action: </label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <select name="requiredAction" id="requiredAction">
+                                                <option value="blank"></option>
+                                                <option value="Dispatched to Technician for Inside Checking">Dispatched to Technician for Inside Checking</option>
+                                                <option value="Dispatched to Technician for Outside Checking">Dispatched to Technician for Outside Checking</option>
+                                                <option value="For IM Checking">For IM Checking</option>
+                                                <option value="FCR">FCR</option>
+                                                <option value="For Network Checking">For Network Checking</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="pt">Is there a PT: </label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <select name="pt" id="pt">
+                                                <option value="blank"></option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="formBody2">
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="onuSN">ONU Serial Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="onuSN" name="onuSN">
+                                        </div>
+                                    </div>
+
+                                    <div id="istherePT">
+                                        <div class="formFlex">
+                                            <label for="onuPTn">PT Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="onuPTn" name="onuPTn">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="onuLS">ONU Light Status:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="onuLS" id="onuLS"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="flmTrb">FLM Troubleshooting:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="flmTrb" id="flmTrb"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="addRemarks">Additional Remarks:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="addRemarks" id="addRemarks">CEP Case Number: </textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="btnDiv">
+                                <div class="btnInnerDiv">
+                                    <div class="resetbtn" >
+                                        <input type="reset" value="RESET">
+                                    </div>
+    
+                                    <div class="cepNotesDiv" id="cepNoteID">
+                                        <button id="cepNBtn">CEP NOTES</button>
+                                    </div>
+    
+                                    <div class="abcaDiv">
+                                        <button id="abcabtn">ABCA</button>
+                                    </div>
+    
+                                    <div class="specialInsDiv">
+                                        <button id="siBtn">SPECIAL INSTRUCTION</button>
+                                    </div>
+                                </div>
+                            </div>
+    
+
+
+                        </div>
+
+                        <!-- SANA ALL FORMS -->
+
+                        <div id="sana-allForm" class="hideCH">
+
+                            <div class="mainform mainform1">
+                                
+                                <div class="formBody1">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="ritm">RITM</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="ritm" name="ritm">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="cepcn">CEP Case Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="cepcn" name="cepcn">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="ritmdate">Received Thru Sana All Dated:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="ritmdate" name="ritmdate">
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="sfdcCaseNum1">SFDC Case Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="sfdcCaseNum1" name="sfdcCaseNum1">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="contactNumber1">Contact Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="contactNumber1" name="contactNumber1">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="contactEmail1" class="extendedLabel" class="extendedLabel">Contact Email</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="email" id="contactEmail1" name="contactEmail1">
+                                        </div>    
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="concernSearch" class="formLabel">Concern:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <div class="inputContainer">
+                                                <input type="text" id="concernSearchSA" class="formInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                                                <div id="concernDropdownSA" class="dropdown-content hideCH">
+                                                    <ul id="concernListSA" class="dropdownList"></ul>
+                                                </div>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="formBody2">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="baNumSA">Billing Account Number</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="baNumSA" name="baNumSA">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="caNum">Customer Account Number</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="caNum" name="caNum">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="contactPerson1">Contact Person:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="contactPerson1" name="contactPerson1">
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="wPermit1">Working Permit Needed:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <select name="wPermit1" id="wPermit1">
+                                                <option value="blank"></option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="Not Needed">Not Needed</option>
+                                                <option value="Not Need  - Please Bring ID">Not Need - Please Bring ID</option>
+                                                <option value="For Verification">For Verification</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="avalableDateandTime1">Available Date and Time:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="avalableDateandTime1" name="avalableDateandTime1">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="serviceIDSA">Service ID:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="serviceIDSA" name="serviceIDSA">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="aName">Account Name:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="aName" name="aName">
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+
+                            </div>
+
+ 
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="cvTestResult1">Clearview Test Result:</label>
+                                </div>  
+                                <div class="ttdFlex2">
+                                    <textarea name="cvTestResult1" id="cvTestResult1"></textarea>
+                                </div>
+                            </div>    
+
+                            <div class="mainform">
+            
+                                <div class="formBody1">
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="requiredAction1">Required Action: </label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <select name="requiredAction1" id="requiredAction1">
+                                                <option value="blank"></option>
+                                                <option value="Dispatched to Technician for Inside Checking">Dispatched to Technician for Inside Checking</option>
+                                                <option value="Dispatched to Technician for Outside Checking">Dispatched to Technician for Outside Checking</option>
+                                                <option value="For IM Checking">For IM Checking</option>
+                                                <option value="FCR">FCR</option>
+                                                <option value="For Network Checking">For Network Checking</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="pt1">Is there a PT: </label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <select name="pt1" id="pt1">
+                                                <option value="blank"></option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="formBody2">
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="onuSN1">ONU Serial Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="onuSN1" name="onuSN1">
+                                        </div>
+                                    </div>
+
+                                    <div id="istherePT">
+                                        <div class="formFlex">
+                                            <label for="ptNum1">PT Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="ptNum1" name="ptNum1">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="onuLS1">ONU Light Status:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="onuLS1" id="onuLS1"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="flmTrb1">FLM Troubleshooting:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="flmTrb1" id="flmTrb1"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="addRemarksSA">Additional Remarks:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="addRemarksSA" id="addRemarksSA"></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="btnDiv">
+                                <div class="btnInnerDiv">
+                                    <div >
+                                        <input type="reset" value="RESET">
+                                    </div>
+    
+                                    <div id="cepNoteID">
+                                        <button id="cepNBtn_SANALL">CEP NOTES</button>
+                                    </div>
+    
+                                    <div>
+                                        <button id="abcabtn_SANALL">ABCA</button>
+                                    </div>
+    
+                                    <div>
+                                        <button id="siBtn_SANALL">SPECIAL INSTRUCTION</button>
+                                    </div>
+
+                                    <div>
+                                        <button id="notation_SANALL">SANA ALL NOTATION</button>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+
+                            
+    
+
+                        </div>
+
+
+                        <div id="amForm" class="hideCH">
+
+                            <div class="mainform mainform1">
+                                
+                                <div class="formBody1">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="anAM">Account Name:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="anAM" name="anAM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="concernSearch3" class="formLabel">Concern:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <div class="inputContainer">
+                                                <input type="text" id="concernSearch3" class="formInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                                                <div id="concernDropdown3" class="dropdown-content hideCH">
+                                                    <ul id="concernList3" class="dropdownList"></ul>
+                                                </div>
+                                            </div>
+                                        </div>                            
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="serviceID2">Service ID:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="serviceID2" name="serviceID2">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="formBody2">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="baNum2">Billing Account Number</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="baNum2" name="baNum2">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="caNum2">Customer Account Number</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="caNum2" name="caNum2">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="addRemarks2">Additional Remarks:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="addRemarks2" id="addRemarks2"></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="btnDiv">
+                                <div class="btnInnerDiv">
+                                    <div >
+                                        <input type="reset" value="RESET">
+                                    </div>
+    
+                                    <div id="cepNoteID">
+                                        <button id="amBtn">GENERATE NOTATION</button>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+
+                            
+    
+
+                        </div>
+
+                        <!-- EMAIL AND SOCMED SECTION -->
+
+                        <div id="emailForm" class="hideCH">
+
+                                <div class="mainform mainform1">
+                                    
+                                    <div class="formBody1">
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="sfdcCasenum_EM">SFDC Case Number:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="number" id="sfdcCaseNum_EM" name="sfdcCaseNum_EM">
+                                            </div>
+                                        </div>
+    
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="cepCasenum_EM">CEP Case Number:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="number" id="cepCasenum_EM" name="cepCasenum_EM">
+                                            </div>
+                                        </div>
+    
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="rte_EM">Received thru Enterprise Care Mailbox Dated:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="text" id="rte_EM" name="rte_EM">
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="contactNumber_EM">Contact Number:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="number" id="contactNumber_EM" name="contactNumber_EM">
+                                            </div>
+                                        </div>
+    
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="contactEmail_EM" class="extendedLabel" class="extendedLabel">Contact Email:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="email" id="contactEmail_EM" name="contactEmail_EM">
+                                            </div>    
+                                        </div>
+    
+        
+
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="concernSearch_EM" class="formLabel">Concern:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <div class="inputContainer">
+                                                    <input type="text" id="concernSearch_EM" class="formInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                                                    <div id="concernDropdown_EM" class="dropdown-content hideCH">
+                                                        <ul id="concernList_EM" class="dropdownList"></ul>
+                                                    </div>
+                                                </div>
+                                            </div>                            
+                                        </div>
+
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="rcontactperson_EM">Reported Contact Person:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="text" id="rcontactperson_EM" name="rcontactperson_EM">
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="serviceID_EM">Service ID:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="text" id="serviceID_EM" name="serviceID_EM">
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+    
+                                    <div class="formBody2">
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="baNum_EM">Billing Account Number:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="number" id="baNum_EM" name="baNum_EM">
+                                            </div>
+                                        </div>
+    
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="customerAccountnum_EM">Customer Account Number:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="number" id="customerAccountnum_EM" name="customerAccountnum_EM">
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="accountname_EM">Account Name:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="text" id="accountname_EM" name="accountname_EM">
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="wPermit_EM">Working Permit Needed:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <select name="wPermit_EM" id="wPermit_EM">
+                                                    <option value="blank"></option>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="Not Needed">Not Needed</option>
+                                                    <option value="Not Need  - Please Bring ID">Not Need - Please Bring ID</option>
+                                                    <option value="For Verification">For Verification</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="avalableDateandTime_EM">Available Date and Time:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="text" id="avalableDateandTime_EM" name="avalableDateandTime_EM">
+                                            </div>
+                                        </div>
+    
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="contactperson_EM">Contact Person:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="text" id="contactperson_EM" name="contactperson_EM">
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="rcontactNumber_EM">Reported Contact Number:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="text" id="rcontactNumber_EM" name="rcontactNumber_EM">
+                                            </div>
+                                        </div>
+
+                                        
+                                        
+                                        
+                                    </div>
+    
+                                </div>
+    
+    
+                                <div class="textAreaDiv">
+                                    <div class="ttdFlex1">
+                                        <label for="wocas_EM">WOCAS:</label>
+                                    </div>  
+                                    <div class="ttdFlex2">
+                                        <textarea name="wocas_EM" id="wocas_EM"></textarea>
+                                    </div>
+                                </div>   
+    
+                                <div class="textAreaDiv">
+                                    <div class="ttdFlex1">
+                                        <label for="cvTestResult_EM">Clearview Test Result:</label>
+                                    </div>  
+                                    <div class="ttdFlex2">
+                                        <textarea name="cvTestResult_EM" id="cvTestResult_EM"></textarea>
+                                    </div>
+                                </div>    
+    
+                                <div class="mainform">
+                
+                                    <div class="formBody1">
+    
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="requiredAction_EM">Required Action: </label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <select name="requiredAction_EM" id="requiredAction_EM">
+                                                    <option value="blank"></option>
+                                                    <option value="Dispatched to Technician for Inside Checking">Dispatched to Technician for Inside Checking</option>
+                                                    <option value="Dispatched to Technician for Outside Checking">Dispatched to Technician for Outside Checking</option>
+                                                    <option value="For IM Checking">For IM Checking</option>
+                                                    <option value="FCR">FCR</option>
+                                                    <option value="For Network Checking">For Network Checking</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="pt_EM">Is there a PT: </label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <select name="pt_EM" id="pt_EM">
+                                                    <option value="blank"></option>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    
+    
+                                    <div class="formBody2">
+    
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="onuSN_EM">ONU Serial Number:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="text_EM" id="onuSN_EM" name="onuSN_EM">
+                                            </div>
+                                        </div>
+    
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="pn_EM">PT Number:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="text" id="pn_EM" name="pn_EM">
+                                            </div>
+                                        </div>
+    
+    
+                                    </div>
+                                </div>
+    
+                                <div class="textAreaDiv">
+                                    <div class="ttdFlex1">
+                                        <label for="onuLS_EM">ONU Light Status:</label>
+                                    </div>
+                                    <div class="ttdFlex2">
+                                        <textarea name="onuLS_EM" id="onuLS_EM"></textarea>
+                                    </div>
+                                </div>
+    
+                                <div class="textAreaDiv">
+                                    <div class="ttdFlex1">
+                                        <label for="flmTrb_EM">FLM Troubleshooting:</label>
+                                    </div>
+                                    <div class="ttdFlex2">
+                                        <textarea name="flmTrb_EM" id="flmTrb_EM"></textarea>
+                                    </div>
+                                </div>
+    
+                                <div class="textAreaDiv">
+                                    <div class="ttdFlex1">
+                                        <label for="addRemarks_EM">Action Taken:</label>
+                                    </div>
+                                    <div class="ttdFlex2">
+                                        <textarea name="addRemarks_EM" id="addRemarks_EM"></textarea>
+                                    </div>
+                                </div>
+    
+    
+                                <div class="btnDiv">
+                                    <div class="btnInnerDiv">
+                                        <div class="resetbtn" >
+                                            <input type="reset" value="RESET">
+                                        </div>
+        
+                                        <div class="cepNotesDiv" id="cepNoteID">
+                                            <button id="cn_EM">CEP NOTES</button>
+                                        </div>
+
+                                        <div class="standardNotesDiv" id="StandardNotesID">
+                                            <button id="sn_EM">STANDARD NOTES</button>
+                                        </div>
+       
+                                        <div class="specialInsDiv">
+                                            <button id="si_EM">SPECIAL INSTRUCTION</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+    
+
+                        </div>
+
+                        <div id="socmedForm" class="hideCH">
+
+                            <div class="mainform mainform1">
+                                    
+                                <div class="formBody1">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="Casenum_SM">Case Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="Casenum_SM" name="Casenum_SM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="sfdctechnicalCasenum_SM">SFDC Technical Case Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="sfdctechnicalCasenum_SM" name="sfdctechnicalCasenum_SM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="cepCasenum_SM">CEP Case Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="cepCasenum_SM" name="cepCasenum_SM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="rtsm">Received thru Enterprise SocMed Dated:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="rtsm" name="rtsm">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="contactNumber_SM">Contact Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="contactNumber_SM" name="contactNumber_SM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="fromsocialpersona_SM" class="extendedLabel" class="extendedLabel">From: (Social Persona)</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="fromsocialpersona_SM" name="fromsocialpersona_SM">
+                                        </div>    
+                                    </div>
+
+                                    
+                                    
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="industrygroup_SM" class="extendedLabel" class="extendedLabel">Industry Group:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="industrygroup_SM" name="industrygroup_SM">
+                                        </div>    
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="rcontactperson_SM">Reported Contact Person:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="rcontactperson_SM" name="rcontactperson_SM">
+                                        </div>
+                                    </div>
+
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="concernSearch_SM" class="formLabel">Concern:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <div class="inputContainer">
+                                                <input type="text" id="concernSearch_SM" class="formInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                                                <div id="concernDropdown_SM" class="dropdown-content hideCH">
+                                                    <ul id="concernList_SM" class="dropdownList"></ul>
+                                                </div>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="formBody2">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="baNum_SM">Billing Account Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="baNum_SM" name="baNum_SM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="customerAccountnum_SM">Customer Account Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="customerAccountnum_SM" name="customerAccountnum_SM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="accountname_SM">Account Name:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="accountname_SM" name="accountname_SM">
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="wPermit_SM">Working Permit Needed:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <select name="wPermit_SM" id="wPermit_SM">
+                                                <option value="blank"></option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="Not Needed">Not Needed</option>
+                                                <option value="Not Need  - Please Bring ID">Not Need - Please Bring ID</option>
+                                                <option value="For Verification">For Verification</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="avalableDateandTime_SM">Available Date and Time:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="avalableDateandTime_SM" name="avalableDateandTime_SM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="contactperson_SM">Contact Person:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="contactperson_SM" name="contactperson_SM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="serviceID_SM">Service ID:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="serviceID_SM" name="serviceID_SM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="rcontactNumber_SM">Reported Contact Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="rcontactNumber_SM" name="rcontactNumber_SM">
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+
+                            </div>
+
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="wocas_SM">WOCAS:</label>
+                                </div>  
+                                <div class="ttdFlex2">
+                                    <textarea name="wocas_SM" id="wocas_SM"></textarea>
+                                </div>
+                            </div>   
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="cvTestResult_SM">Clearview Test Result:</label>
+                                </div>  
+                                <div class="ttdFlex2">
+                                    <textarea name="cvTestResult_SM" id="cvTestResult_SM"></textarea>
+                                </div>
+                            </div>    
+
+                            <div class="mainform">
+            
+                                <div class="formBody1">
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="requiredAction_SM">Required Action: </label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <select name="requiredAction_SM" id="requiredAction_SM">
+                                                <option value="blank"></option>
+                                                <option value="Dispatched to Technician for Inside Checking">Dispatched to Technician for Inside Checking</option>
+                                                <option value="Dispatched to Technician for Outside Checking">Dispatched to Technician for Outside Checking</option>
+                                                <option value="For IM Checking">For IM Checking</option>
+                                                <option value="FCR">FCR</option>
+                                                <option value="For Network Checking">For Network Checking</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="pt_SM">Is there a PT: </label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <select name="pt_SM" id="pt_SM">
+                                                <option value="blank"></option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <div class="formBody2">
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="onuSN_SM">ONU Serial Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="onuSN_SM" name="onuSN_SM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="pn_SM">PT Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="pn_SM" name="pn_SM">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="onuLS_SM">ONU Light Status:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="onuLS_SM" id="onuLS_SM"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="flmTrb_SM">FLM Troubleshooting:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="flmTrb_SM" id="flmTrb_SM"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="addRemarks_SM">Action Taken:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="addRemarks_SM" id="addRemarks_SM"></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="btnDiv">
+                                <div class="btnInnerDiv">
+                                    <div class="resetbtn" >
+                                        <input type="reset" value="RESET">
+                                    </div>
+    
+                                    <div class="cepNotesDiv" id="cepNoteID">
+                                        <button id="cn_SM">CEP NOTES</button>
+                                    </div>
+
+                                    <div class="standardNotesDiv" id="StandardNotesID">
+                                        <button id="sn_SM">STANDARD NOTES</button>
+                                    </div>
+   
+                                    <div class="specialInsDiv">
+                                        <button id="si_SM">SPECIAL INSTRUCTION</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+    
+
+                        </div>
+                </form> 
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="dbox okDis" id="dbox">
+        <div id="adbTitleDiv">
+            <p id="dboxTitle"></p>
+        </div>
+        <div id="txtBoxDiv">
+            <div>
+                <textarea name="tbdTxtArea" id="tbdTxtArea"></textarea>
+            </div>
+        </div>
+        <div id="okBtnDiv">
+            <button id="okbtn">OK</button>
+        </div>
+    </div>
+
+    <div id="stickyFooter">
+        <div>
+            <p>Enterprise Notes Generator V2</p>
+            <p>Developed and designed by: QA Team</p>
+        </div>
+    </div>
+
+
+<!-- Scripts -->
+
+ <!-- GENERAL FUNCTION SCRIPT -->
+  <script src="generalFunctions.js"></script>
+
+<!-- HOTLINE SCRIPT -->
+ <script src="hotline.js"></script>
+
+<!-- SANA ALL SCRIPT -->
+ <script src="sanaall.js"></script>
+
+<!-- EMAIL SCRIPT -->
+ <script src="email.js"></script>
+
+<!-- SOCMED SCRIPT -->
+ <script src="socmed.js"></script>
+
+ <!-- COLOR CHANGER -->
+  <script src="chameleon.js"></script>
+
+ 
+    
+</body>
+</html>
